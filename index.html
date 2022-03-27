@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- clean up code: --> 
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+      <script src="/script.js" defer></script>
+     
+  
+  </head>
+  <body >
+   
+    <h1>
+       Light and Memory Game 
+    </h1>
+    <p>
+       Welcome to the game! Are you ready to play? 
+    </p>
+    
+    <button id = "startBtn" onclick="startGame()">
+      Start ▶️
+    </button>
+    <button id = "stopBtn" class = "hidden" onclick="stopGame()"> 
+      Stop 🛑
+    </button>
+
+
+    <audio src="https://cdn.glitch.global/9196d7f2-53ee-4291-8c55-0c6887286de0/%5BMP3FY%5D%20Jay-Z%20feat.%20Alicia%20Keys%20-%20Empire%20State%20of%20Mind%20(Official%20Music%20Video).mp3?v=1647981406168" id="myAudio"></audio>
+   <button onclick="playMyAudio()">Play Audio 🔊</button>
+   <button onclick="pauseMyAudio()">Pause Audio 🔇</button>
+   <p id="audioStatus">Click The Play Button 🎵. Suggest to stop music while playing game.</p>
+
+   
+    <div id ="gameButtonArea">
+       <button id = "button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+       <button id = "button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+       <button id = "button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+       <button id = "button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+       <button id = "button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"></button>
+       <button id = "button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"></button>
+       <button id = "button7" onclick="guess(7)" onmousedown="startTone(7)" onmouseup="stopTone()"></button>
+       <button id = "button8" onclick="guess(8)" onmousedown="startTone(8)" onmouseup="stopTone()"></button>
+       <button id = "button9" onclick="guess(9)" onmousedown="startTone(9)" onmouseup="stopTone()"></button>
+      <!-- move all the user interactions to js file! -->
+    </div>
+    
+
+  </body>
+</html>
